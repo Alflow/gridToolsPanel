@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My favourite fontend tools!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="roboto-regular">
+  <h1>My favourite frontend tools</h1>
+  <div class="container">
+    <div class="left">
+      <div class="top-left">
+        <div class="left-top-left">
+          <div id="coolors" class="top-left-top-left tool" data-url="https://coolors.co">
+            <img src="./media/coolors.PNG" alt="">
+          </div>
+          <div id="waves" class="mid-left-top-left tool" data-url="https://www.softr.io/tools/svg-wave-generator">
+            <img src="./media/waves.png" alt="">
+          </div>
+          <div id="autoPrefixer" class="bottom-left-top-left tool" data-url="https://autoprefixer.github.io">
+            <img src="./media/autoPrefixer.png" alt="">
+          </div>
+        </div>
+        <div class="right-top-left">
+          <div class="mid-top">
+            <div id="blobs" class="left-mid-top tool" data-url="https://www.softr.io/tools/svg-shape-generator">
+              <img src="./media/blobs.png" alt="">
+            </div>
+            <div id="heroIcons" class="right-mid-top tool" data-url="https://heroicons.com/">
+              <img src="./media/heroIcons.png" alt="">
+            </div>
+          </div>
+          <div id="awwwards" class="mid-mid tool" data-url="https://www.awwwards.com/">
+            <img src="./media/awwwards.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bottom-left">
+        <div id="layoutGenerator" class="left-bottom-left tool" data-url="https://layout.bradwoods.io/">
+          <img src="./media/layoutGenerator.png" alt="">
+        </div>
+        <div id="pexels" class="right-bottom-left tool" data-url="https://www.pexels.com/">
+          <img src="./media/pexels.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div id="scrollTop" class="top-right tool" data-url="https://www.softr.io/tools/javascript-scroll-to-top-button">
+        <img src="./media/scrollTop.png" alt="">
+      </div>
+      <div id="tinyPng" class="mid-right tool" data-url="https://tinypng.com/">
+        <img src="./media/tinypng.png" alt="">
+      </div>
+      <div id="lottie" class="bottom-right tool" data-url="https://lottiefiles.com/">
+        <img src="./media/lottie.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.tool').forEach(div => {
+      div.addEventListener('click', function() {
+        const url = this.getAttribute('data-url');
+        window.open(url, '_blank');
+      });
+    });
+  </script>
+</body>
+
+</html>

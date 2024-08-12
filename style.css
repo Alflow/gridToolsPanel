@@ -22,7 +22,7 @@ h1{
   gap: 0px 10px;
   grid-auto-flow: row;
   grid-template-areas: "left right";
-  height: 90%;
+  height: 80%;
   width: 90%;
   background-color: #161f27;
 }
